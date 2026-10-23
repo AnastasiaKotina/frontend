@@ -15,7 +15,7 @@
     <textarea id="fileContent" readonly rows="5" cols="40"></textarea>
 
     <script>
-        const API_URL = 'http://127.0.0.1:5000/submit';
+        const API_URL = 'http://backend:5000/submit';
 
         document.getElementById('submitBtn').addEventListener('click', async () => {
 
@@ -40,7 +40,7 @@
             }
         });
 
-        const READ_URL = 'http://127.0.0.1:5000/read';
+        const READ_URL = 'http://backend:5000/read';
 
         document.getElementById('readBtn').addEventListener('click', async () => {
             const statusEl = document.getElementById('readStatus');
